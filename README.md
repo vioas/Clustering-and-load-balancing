@@ -26,15 +26,58 @@
 
 ### Задание 1
   - Запустите два simple python сервера на своей виртуальной машине на разных портах
+
+  <details>
+
+![image](https://github.com/Ivashka80/Claster_and_Balance/assets/121082757/bcc36292-87c5-42ca-9d9b-6f5dfad9c107)
+
+![image](https://github.com/Ivashka80/Claster_and_Balance/assets/121082757/66d312c3-eb87-449e-9910-e8a8788d4257)
+
+</details>
+
   - Установите и настройте HAProxy, воспользуйтесь материалами к лекции по ссылке
   - Настройте балансировку Round-robin на 4 уровне.
   - На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy.
 
+<details>
+
+Ссылка HAProxy https://github.com/Ivashka80/Claster_and_Balance/blob/main/haproxy.cfg
+
+![image](https://github.com/Ivashka80/Claster_and_Balance/assets/121082757/f89c9e2b-5c95-400f-84b6-faed7f264c16)
+
+![image](https://github.com/Ivashka80/Claster_and_Balance/assets/121082757/f5d85d4f-d829-4318-a010-2fd4bb28314c)
+
+</details>
+
 ### Задание 2
   - Запустите три simple python сервера на своей виртуальной машине на разных портах
+
+  <details>
+
+![image](https://github.com/Ivashka80/Claster_and_Balance/assets/121082757/0fb5a1d0-c167-4b81-8822-5d47f7de7338)
+
+![image](https://github.com/Ivashka80/Claster_and_Balance/assets/121082757/460d98bf-9378-4979-adb9-4f7a6d997148)
+
+![image](https://github.com/Ivashka80/Claster_and_Balance/assets/121082757/e580c16a-d469-4864-9ac7-e0c3799b84c3)
+
+</details>
+
   - Настройте балансировку Weighted Round Robin на 7 уровне, чтобы первый сервер имел вес 2, второй - 3, а третий - 4
   - HAproxy должен балансировать только тот http-трафик, который адресован домену example.local
   - На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy c использованием домена example.local и без него.
+
+<details>
+
+Ссылка файл HAProxy https://github.com/Ivashka80/Claster_and_Balance/blob/main/haproxy_2.cfg
+
+![image](https://github.com/Ivashka80/Claster_and_Balance/assets/121082757/f408686a-9e77-45f0-a3c2-9624e873f877)
+
+![image](https://github.com/Ivashka80/Claster_and_Balance/assets/121082757/9d827381-b37f-49c6-ba73-814fc7d22f90)
+
+</details>
+---
+<details>
+
 
 ### Задания со звёздочкой*
 Эти задания дополнительные. Их можно не выполнять. На зачёт это не повлияет. Вы можете их выполнить, если хотите глубже разобраться в материале.
